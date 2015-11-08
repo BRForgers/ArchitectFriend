@@ -11,6 +11,6 @@
   "credits": "Armelin for the Idea and Textures",
   "logoFile": "/ArchitectFriend.png",
   "screenshots": [],
-  "dependencies": []
+  "dependencies": [BRForgersCore]
 }
 ]
