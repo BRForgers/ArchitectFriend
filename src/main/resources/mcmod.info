@@ -1,15 +1,15 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "ArchitectFriend",
+  "name": "Architect's Friend",
+  "description": "Pixel Arts, Big Builds, doesn't matter. With Architect's Friend you can build it!",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "",
+  "url": "http://brazillianforgers.esy.es/",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
-  "logoFile": "",
+  "authorList": ["TheBrazillianForgersTeam","TheFreeHigh (Code)","Armelin (Textures)"],
+  "credits": "Armelin for the Idea and Textures",
+  "logoFile": "/ArchitectFriend.png",
   "screenshots": [],
   "dependencies": []
 }

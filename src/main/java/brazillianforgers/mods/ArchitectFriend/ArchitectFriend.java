@@ -19,7 +19,7 @@ import net.minecraftforge.common.config.Configuration;
 import brazillianforgers.lib.ObjectStorage;
 import brazillianforgers.mods.ArchitectFriend.proxy.CommonProxy;
 
-@Mod(modid = Lib.MODID , version = Lib.VERSION , name = Lib.MODNAME)
+@Mod(modid = Lib.MODID , version = Lib.VERSION , name = Lib.MODNAME, dependencies = Lib.DEPS)
 public class ArchitectFriend
 {
 	@Instance(Lib.MODID)
