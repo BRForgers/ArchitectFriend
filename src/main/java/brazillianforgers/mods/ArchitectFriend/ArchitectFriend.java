@@ -38,14 +38,14 @@ public class ArchitectFriend
 	};
 	
 	static Logger logger;
-	static Configuration config;
-	private static ObjectStorage configLib = new ObjectStorage();
+	//static Configuration config;
+	//private static ObjectStorage configLib = new ObjectStorage();
 	
 	@EventHandler
 	public static void preInit(FMLPreInitializationEvent e)
 	{
 		logger = e.getModLog();
-		config = new Configuration(e.getSuggestedConfigurationFile());
+		//config = new Configuration(e.getSuggestedConfigurationFile());
 		
 		proxy.preInit();
 	}

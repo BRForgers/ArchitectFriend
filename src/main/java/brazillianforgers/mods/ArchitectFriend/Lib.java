@@ -9,7 +9,7 @@ public class Lib {
 	
 	//Little Helper, huh?
 	public static final String TEXTURE_PATH = MODID + ":";
-	public static final String UPDATEURL = "https://raw.githubusercontent.com/TheBrazillianForgersTeam/BRForgersCore/master/latest.txt";
+	public static final String UPDATEURL = "https://raw.githubusercontent.com/TheBrazillianForgersTeam/ArchitectFriend/master/latest.txt";
 	
 	//Easter Eggs
 	public static final String INITLOG = "Feeling a Architect, huh?";
