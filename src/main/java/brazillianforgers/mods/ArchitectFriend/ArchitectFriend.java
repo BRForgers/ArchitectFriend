@@ -38,6 +38,8 @@ public class ArchitectFriend
 	{
 		logger = e.getModLog();
 		config = new Configuration(e.getSuggestedConfigurationFile());
+		
+		proxy.preInit();
 	}
 	
 	@EventHandler

@@ -7,6 +7,9 @@ public class Lib {
 	public static final String MODNAME = "Architect Friend Mod";
 	public static final String DEPS = "required-after:BRForgersCore[1.1,2.0]"; // + ";required-after:MODID"; for Each other MOD
 	
+	//Little Helper, huh?
+	public static final String TEXTURE_PATH = MODID + ":";
+	
 	//Easter Eggs
 	public static final String INITLOG = "Feeling a Architect, huh?";
 	
