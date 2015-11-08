@@ -16,7 +16,6 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.config.Configuration;
-import scala.collection.script.Update;
 import brazillianforgers.core.UpdateManager;
 import brazillianforgers.lib.ObjectStorage;
 import brazillianforgers.mods.ArchitectFriend.proxy.CommonProxy;
