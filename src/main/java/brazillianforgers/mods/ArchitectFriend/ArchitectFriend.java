@@ -29,6 +29,13 @@ public class ArchitectFriend
 	@SidedProxy(clientSide = Lib.CLIENT, serverSide = Lib.COMMONPROXY)
 	public static CommonProxy proxy;	
 	
+	public static CreativeTabs tabArchitect = new CreativeTabs("tabArchitect") {
+		
+		@Override
+		public Item getTabIconItem() {
+			return Items.clay_ball;
+		}
+	};
 	
 	static Logger logger;
 	static Configuration config;

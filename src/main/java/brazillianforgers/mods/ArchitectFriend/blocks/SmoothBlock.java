@@ -9,6 +9,7 @@ import brazillianforgers.lib.RecipeHelper.ICraftable;
 import brazillianforgers.lib.RecipeHelper.Recipe;
 import brazillianforgers.lib.RecipeHelper.RecipeValue;
 import brazillianforgers.lib.RecipeHelper.RecipeValues;
+import brazillianforgers.mods.ArchitectFriend.ArchitectFriend;
 import brazillianforgers.mods.ArchitectFriend.Lib;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -27,9 +28,9 @@ public class SmoothBlock extends Block implements ICraftable {
 	
 	public SmoothBlock() {
 		super(Material.rock);
-		this.setBlockName("SmoothBlock");
+		this.setBlockName("Smooth");
 		this.setBlockTextureName(Lib.TEXTURE_PATH + "Smooth");
-		this.setCreativeTab(CreativeTabs.tabBlock);
+		this.setCreativeTab(ArchitectFriend.tabArchitect);
 		this.setHardness(2.0F);
 		this.setResistance(6.0F);
 		this.setStepSound(soundTypeStone);

@@ -6,6 +6,7 @@ import java.util.List;
 import brazillianforgers.lib.RecipeHelper.ICraftable;
 import brazillianforgers.lib.RecipeHelper.Recipe;
 import brazillianforgers.lib.RecipeHelper.RecipeValue;
+import brazillianforgers.mods.ArchitectFriend.ArchitectFriend;
 import brazillianforgers.mods.ArchitectFriend.Lib;
 import brazillianforgers.mods.ArchitectFriend.manager.BlockManager;
 import net.minecraft.block.Block;
@@ -21,9 +22,9 @@ public class SmoothBricks extends Block implements ICraftable {
 	
 	public SmoothBricks() {
 		super(Material.rock);
-		this.setBlockName("SmoothBlock");
+		this.setBlockName("Bricks");
 		this.setBlockTextureName(Lib.TEXTURE_PATH + "Bricks");
-		this.setCreativeTab(CreativeTabs.tabBlock);
+		this.setCreativeTab(ArchitectFriend.tabArchitect);
 		this.setHardness(2.0F);
 		this.setResistance(6.0F);
 		this.setStepSound(soundTypeStone);
