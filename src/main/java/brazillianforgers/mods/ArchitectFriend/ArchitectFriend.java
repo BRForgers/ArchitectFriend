@@ -32,6 +32,7 @@ public class ArchitectFriend
 	public static CreativeTabs tabArchitect = new CreativeTabs("tabArchitect") {
 		
 		@Override
+		@SideOnly(Side.CLIENT)
 		public Item getTabIconItem() {
 			return Items.clay_ball;
 		}
