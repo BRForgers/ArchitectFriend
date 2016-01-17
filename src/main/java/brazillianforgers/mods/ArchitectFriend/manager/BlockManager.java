@@ -11,6 +11,7 @@ public class BlockManager {
 	public static Block smoothBlock;
 	public static Block smoothBricks;
 	public static Block smoothBrickies;
+	public static Block trueColorClay;
 	
 	public static void init()
 	{
@@ -25,5 +26,9 @@ public class BlockManager {
 		smoothBrickies = new SmoothBrickies();
 		GameRegistry.registerBlock(smoothBrickies, ItemSmoothBrickies.class ,"smoothBrickies");
 		RecipeHelper.registerAll((ICraftable)smoothBrickies);
+		
+		trueColorClay = new TrueColorClay();
+		GameRegistry.registerBlock(trueColorClay, ItemTrueColorClay.class, "trueColorClay");
+		RecipeHelper.registerAll((ICraftable)trueColorClay);
 	}
 }
