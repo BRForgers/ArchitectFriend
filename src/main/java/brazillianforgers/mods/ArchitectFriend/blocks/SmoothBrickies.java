@@ -9,6 +9,8 @@ import brazillianforgers.lib.RecipeHelper.RecipeValue;
 import brazillianforgers.mods.ArchitectFriend.ArchitectFriend;
 import brazillianforgers.mods.ArchitectFriend.Lib;
 import brazillianforgers.mods.ArchitectFriend.manager.BlockManager;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -20,6 +22,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 
 public class SmoothBrickies extends Block implements ICraftable {
+	@SideOnly(Side.CLIENT)
 	protected IIcon[] icons = new IIcon[16];
 	
 	public SmoothBrickies() {
@@ -51,6 +54,7 @@ public class SmoothBrickies extends Block implements ICraftable {
 	/* Texture Override */
 	
 	@Override
+	@SideOnly(Side.CLIENT)
 	public IIcon getIcon(int side, int meta) {
 		return this.icons[meta];
 	}

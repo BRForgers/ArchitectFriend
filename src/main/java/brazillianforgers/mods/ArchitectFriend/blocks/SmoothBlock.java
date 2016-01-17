@@ -24,6 +24,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 
 public class SmoothBlock extends Block implements ICraftable {
+	@SideOnly(Side.CLIENT)
 	protected IIcon[] icons = new IIcon[16];
 	
 	public SmoothBlock() {
@@ -55,6 +56,7 @@ public class SmoothBlock extends Block implements ICraftable {
 	/* Texture Override */
 	
 	@Override
+	@SideOnly(Side.CLIENT)
 	public IIcon getIcon(int side, int meta) {
 		return this.icons[meta];
 	}

@@ -8,10 +8,7 @@ import brazillianforgers.mods.ArchitectFriend.itemblocks.*;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class BlockManager {
-	public static Block smoothBlock;
-	public static Block smoothBricks;
-	public static Block smoothBrickies;
-	public static Block trueColorClay;
+	public static Block smoothBlock, smoothBricks, smoothBrickies, trueColorClay, redstonerBlock;
 	
 	public static void init()
 	{
@@ -30,5 +27,9 @@ public class BlockManager {
 		trueColorClay = new TrueColorClay();
 		GameRegistry.registerBlock(trueColorClay, ItemTrueColorClay.class, "trueColorClay");
 		RecipeHelper.registerAll((ICraftable)trueColorClay);
+		
+		redstonerBlock = new RedstonerBlock();
+		GameRegistry.registerBlock(redstonerBlock, ItemRedstonerBlock.class, "redstonerBlock");
+		RecipeHelper.registerAll((ICraftable)redstonerBlock);
 	}
 }

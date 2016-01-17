@@ -24,6 +24,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 
 public class TrueColorClay extends Block implements ICraftable {
+	@SideOnly(Side.CLIENT)
 	protected IIcon[] icons = new IIcon[16];
 	
 	public TrueColorClay() {
@@ -34,7 +35,6 @@ public class TrueColorClay extends Block implements ICraftable {
 		this.setHardness(2.0F);
 		this.setResistance(6.0F);
 		this.setStepSound(soundTypeStone);
-		this.setLightLevel(1.0F);
 	}
 
 	/* Metadata Override */
@@ -55,6 +55,7 @@ public class TrueColorClay extends Block implements ICraftable {
 	/* Texture Override */
 	
 	@Override
+	@SideOnly(Side.CLIENT)
 	public IIcon getIcon(int side, int meta) {
 		return this.icons[meta];
 	}
