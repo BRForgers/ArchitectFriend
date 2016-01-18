@@ -16,8 +16,8 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.config.Configuration;
-import brazillianforgers.core.UpdateManager;
-import brazillianforgers.lib.ObjectStorage;
+import brazillianforgers.core.UpdateChecker;
+import brazillianforgers.lib.RecipeHelper.RecipeHandler;
 import brazillianforgers.mods.ArchitectFriend.proxy.CommonProxy;
 
 @Mod(modid = Lib.MODID , version = Lib.VERSION , name = Lib.MODNAME, dependencies = Lib.DEPS)
@@ -27,7 +27,9 @@ public class ArchitectFriend
 	public static ArchitectFriend instance;
 	
 	@SidedProxy(clientSide = Lib.CLIENT, serverSide = Lib.COMMONPROXY)
-	public static CommonProxy proxy;	
+	public static CommonProxy proxy;
+	
+	public static RecipeHandler recipes = new RecipeHandler();
 	
 	public static CreativeTabs tabArchitect = new CreativeTabs("tabArchitect") {
 		
@@ -49,18 +51,19 @@ public class ArchitectFriend
 		//config = new Configuration(e.getSuggestedConfigurationFile());
 		
 		proxy.preInit();
+		
+		UpdateChecker.addToUpdateChecker(Lib.MODID, Lib.MODNAME, Lib.UPDATEURL, Lib.VERSION, logger);
 	}
 	
 	@EventHandler
 	public static void Init(FMLInitializationEvent e)
 	{
-		
+		proxy.Init();
 	}
 	
 	@EventHandler
 	public static void postInit(FMLPostInitializationEvent e)
 	{
-		logger.info("Checking for Updates...");
-		UpdateManager.check(Lib.UPDATEURL, logger, Lib.VERSION, Lib.MODNAME);
+		
 	}
 }

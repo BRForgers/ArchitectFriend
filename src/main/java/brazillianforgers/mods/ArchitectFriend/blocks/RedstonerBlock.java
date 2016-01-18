@@ -73,7 +73,7 @@ public class RedstonerBlock extends Block implements ICraftable {
 		List<Recipe> r = new ArrayList<Recipe>();
 		r.add(new Recipe(
 				new ItemStack(this,4,0), new String[]{"BSB","SRS","BSB"},
-				new RecipeValue('R', new ItemStack(Items.redstone)), new RecipeValue('S', new ItemStack(Blocks.stone)), new RecipeValue('B', new ItemStack(Items.dye,1,15))
+				new RecipeValue('R', Items.redstone), new RecipeValue('S', Blocks.stone), new RecipeValue('B', new ItemStack(Items.dye,1,15))
 			)
 		);
 		
@@ -81,7 +81,7 @@ public class RedstonerBlock extends Block implements ICraftable {
 		{
 			r.add(new Recipe(
 				new ItemStack(this,8,i), new String[]{"BBB","BDB","BBB"},
-				new RecipeValue('B', new ItemStack(this)), new RecipeValue('D', new ItemStack(Items.dye,1,15 - i))
+				new RecipeValue('B', this), new RecipeValue('D', new ItemStack(Items.dye,1,15 - i))
 			));
 		}
 		return r.toArray(new Recipe[r.size()]);

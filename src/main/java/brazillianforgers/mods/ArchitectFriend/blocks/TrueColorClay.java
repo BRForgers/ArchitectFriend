@@ -87,7 +87,7 @@ public class TrueColorClay extends Block implements ICraftable {
 		{
 			r.add(new Recipe(
 				new ItemStack(this,8,i), new String[]{"BBB","BDB","BBB"},
-				new RecipeValue('B', new ItemStack(this)), new RecipeValue('D', new ItemStack(Items.dye,1,15 - i))
+				new RecipeValue('B', new ItemStack(this,1,0)), new RecipeValue('D', new ItemStack(Items.dye,1,15 - i))
 			));
 		}
 		return r.toArray(new Recipe[r.size()]);
